@@ -11,7 +11,7 @@
     "build-flow": "flow-copy-source -i */__tests__* src dist",
     "build-src-watch": "genversion src/version.js && BABEL_ENV=development babel src -d dist --ignore __tests__ --copy-files --watch",
     "lint": "eslint ./src",
-    "clean": "",
+    "clean": "echo",
     "validate-ts-declarations": "tsc --project ./",
     "validate-flow-declarations": "flow",
     "format": "npm run format:assets && npm run lint -- --fix",
